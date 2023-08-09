@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+    {{>navbar}}
+    <div class="center">
+        <h1>Registration</h1>
+        <form id="reg-form" method="post">
+            <center><small><span id="error" style="color: red"></span></small></center>
+            <div class="txt-field">
+                <input type="text" id="reg-username" name="username" required>
+                <label>Username</label>
+                <span></span>
+
+            </div>
+            <div class="txt-field">
+                <input type="email" id="reg-email" name="email" required>
+                <label>Enter your email</label>
+                <span></span>
+
+            </div>
+            <div class="txt-field">
+                <input type="password" id="reg-password" name="password" required>
+                <label>Enter your Password</label>
+                <span></span>
+
+            </div>
+            <div class="txt-field">
+                <input type="password" id="reg-password" name="confirmpassword" required>
+                <label>Confirm Password</label>
+                <span></span>
+
+            </div>
+            <input type="submit"  onclick="signUp()" id="reg-button" value="Register" >
+            <div class="signup-link"> Already a member? <a href="/login">Login</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

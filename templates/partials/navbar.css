@@ -1,0 +1,19 @@
+/* Navigation bar */
+.navbar-brand {
+    font-family: "ubantu";
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.nav-item {
+    padding: 0px 2px;
+}
+
+.nav-link {
+    font-size: 1.5rem;
+    font-family: "Montserrat-light";
+}
